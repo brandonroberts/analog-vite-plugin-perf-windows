@@ -19,6 +19,6 @@ jobs:
       - name: Install
         run: npm install
       - name: Build
-        run: npm build
+        run: npm run build
       - name: Verify
         run: more dist\analog\public\index.html
