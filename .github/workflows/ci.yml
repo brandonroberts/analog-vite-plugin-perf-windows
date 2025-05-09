@@ -17,8 +17,8 @@ jobs:
           node-version: 22
       - run: corepack enable
       - name: Install
-        run: pnpm install --frozen-lockfile --prefer-offline
+        run: npm install
       - name: Build
-        run: pnpm build
+        run: npm build
       - name: Verify
         run: more dist\analog\public\index.html
